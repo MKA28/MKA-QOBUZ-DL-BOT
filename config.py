@@ -11,6 +11,7 @@ class Config(object):
     OWNER_ID = int(os.environ.get('OWNER_ID', 1257782782)) # give your owner id # if given 0 shell will not works
     AUTH_IDS = [int(x) for x in os.environ.get("AUTH_IDS", "0").split()] # if open to everyone give 0
     AUTH_IDS.append(OWNER_ID)
+    IS_BOT_PUBLIC = getenv("IS_BOT_PUBLIC", True)
     QOBUZ_MAIL = os.environ.get("QOBUZ_MAIL", "xxxx")
     QOBUZ_PASS = os.environ.get("QOBUZ_PASS", "xxxx")
     QOBUZ_QUAL = int(os.environ.get("QOBUZ_QUAL", 27))
