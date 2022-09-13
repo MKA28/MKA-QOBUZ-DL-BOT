@@ -46,9 +46,10 @@
             "description": "Value",
             "value": "0"
         }, 
-        "IS_BOT_PUBLIC": { "description": "Want to allow public access to bot ? (True/False)", 
-           "value": "True", 
-           "required": true
+        "IS_BOT_PUBLIC": { 
+            "description": "Want to allow public access to bot ? (True/False)", 
+           "value": "0", 
+       
     },
     
     "buildpacks": [
